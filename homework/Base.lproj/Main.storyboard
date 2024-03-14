@@ -1,24 +1,593 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0G0-gh-1zd">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="sFr-RI-d2u">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0G0-gh-1zd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Ig-pI-Mqi">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NO3-bR-Xtz" kind="relationship" relationship="viewControllers" id="2wc-aj-WTy"/>
+                        <segue destination="1Au-bE-FvK" kind="relationship" relationship="viewControllers" id="jzU-Sy-F8V"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dKL-vi-GCh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-214.50381679389312" y="-61.267605633802823"/>
+        </scene>
+        <!--章節-->
+        <scene sceneID="Ov3-84-iaX">
+            <objects>
+                <tableViewController id="2kd-qg-aQt" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="KmL-zT-JOP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="第一章" id="3UR-L5-pKH">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="Gx8-Db-oqz">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gx8-Db-oqz" id="9Sg-B7-duy">
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Amy_s" id="RyC-Kg-LrC">
+                                                    <rect key="frame" x="20" y="0.0" width="120" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="「月亮湖的秘密」" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wcf-vN-HhQ">
+                                                    <rect key="frame" x="148" y="38" width="208" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vgq-c6-bas" kind="show" id="GSs-LU-yaW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="第二章" id="QUB-2W-bIX">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="sgq-K3-BaF">
+                                        <rect key="frame" x="0.0" y="248" width="393" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sgq-K3-BaF" id="G5p-9f-wsp">
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dream_forest_120x120" id="tBy-yM-khB">
+                                                    <rect key="frame" x="20" y="0.0" width="120" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="「夢境森林的冒險」" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u1k-HB-4g5">
+                                                    <rect key="frame" x="148" y="38" width="225" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="TKO-Fw-ExX" kind="show" id="4lF-7P-5DK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="第三章" id="8aj-Ud-WMZ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="2aI-AD-qe6">
+                                        <rect key="frame" x="0.0" y="446" width="393" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2aI-AD-qe6" id="pbW-Hx-PmV">
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starlight_island_120x120" id="yIS-Gf-zIg">
+                                                    <rect key="frame" x="20" y="0.0" width="120" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="「星光島的寶藏」" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TXj-oY-guO">
+                                                    <rect key="frame" x="148" y="38" width="225" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="39L-gN-b1r" kind="show" id="wdk-VK-G7F"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="2kd-qg-aQt" id="8CA-oW-8uP"/>
+                            <outlet property="delegate" destination="2kd-qg-aQt" id="uOq-9f-2XV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="章節" id="XaR-yc-Hf5"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hS6-iT-Fex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634.3511450381679" y="-737.32394366197184"/>
+        </scene>
+        <!--故事-->
+        <scene sceneID="zes-am-wEA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NO3-bR-Xtz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="故事" id="Vdy-pj-XMr">
+                        <imageReference key="image" image="book" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kp6-gA-9Ng">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2kd-qg-aQt" kind="relationship" relationship="rootViewController" id="Jh4-7B-HIa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asX-bQ-CLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707.63358778625957" y="-737.32394366197184"/>
+        </scene>
+        <!--月亮湖的秘密-->
+        <scene sceneID="mGr-ms-n91">
+            <objects>
+                <viewController id="vgq-c6-bas" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VOv-Ir-pFC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Amy" translatesAutoresizingMaskIntoConstraints="NO" id="1Lk-BV-UDf">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULL-uk-htM">
+                                <rect key="frame" x="0.0" y="734" width="393" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="閱讀"/>
+                                <connections>
+                                    <segue destination="gIX-61-WC4" kind="show" id="sNq-KY-muM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wn0-f9-Kud"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="月亮湖的秘密" id="B9h-ZM-Ffm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A7s-va-XDV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2522.9007633587785" y="-737.32394366197184"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jw3-KK-BOC">
+            <objects>
+                <viewController id="gIX-61-WC4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="loP-BZ-dUj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3S-AR-0rA">
+                                <rect key="frame" x="16" y="233" width="361" height="666"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">故事情節
+
+在一個遙遠的小村莊邊緣，有一個被古老森林圍繞的閃亮湖泊，村民們稱它為「月亮湖」。傳說，在每個月圓之夜，湖水會發出神秘的光芒，而那些勇敢的探險者可以通過這光芒找到通往另一個世界的入口。
+
+主角是一個好奇心旺盛的小孩，名叫艾米。艾米對「月亮湖」的傳說充滿了好奇，決定在下一個月圓之夜探索湖泊的秘密。當晚，艾米帶著她的小燈籠走進了森林，踏上了尋找月亮湖的冒險之旅。
+
+艾米穿越了濃密的森林，最終找到了閃耀著藍色光芒的月亮湖。當她靠近湖邊時，湖面的光芒突然形成了一道門，艾米毫不猶豫地走了進去。穿過光之門後，她來到了一個美麗的神秘世界，那裡有著奇妙的生物和未知的冒險等著她。
+
+在這個神秘世界裡，艾米遇到了一個看守森林的友好精靈，精靈告訴她，只有擁有純潔心靈的人才能看到並進入這個世界。精靈還分享了保護自然的重要性，並賜予艾米一個發光的石頭作為禮物，這個石頭能讓她在需要的時候找到回家的路。
+
+艾米帶著滿滿的回憶和神秘的石頭回到了家，從此之後，她更加珍惜身邊的一切，並與村莊的孩子們分享了她的冒險故事，激勵他們保護自然，並追尋自己的冒險夢想。</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v0g-Yq-BhB">
+                                <rect key="frame" x="16" y="103" width="361" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="GwQ-r1-xaQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1-1" translatesAutoresizingMaskIntoConstraints="NO" id="0YP-I7-blN">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1-2" translatesAutoresizingMaskIntoConstraints="NO" id="lnd-Eb-hpw">
+                                                <rect key="frame" x="120" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1-3" translatesAutoresizingMaskIntoConstraints="NO" id="t43-Te-hCB">
+                                                <rect key="frame" x="240" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1-4" translatesAutoresizingMaskIntoConstraints="NO" id="zX8-cA-w6Q">
+                                                <rect key="frame" x="360" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1-5" translatesAutoresizingMaskIntoConstraints="NO" id="dLe-Qs-bVO">
+                                                <rect key="frame" x="480" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="j07-r7-Ar4"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="0pg-Py-NIL"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="O7h-1x-OHv"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="600" height="120"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xxL-iY-vuI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="zWM-0h-ZmV">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qZ8-3f-D5u"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1Z-3E-Yq4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3351.9083969465646" y="-737.32394366197184"/>
+        </scene>
+        <!--夢境森林的冒險-->
+        <scene sceneID="jtI-kJ-10Q">
+            <objects>
+                <viewController id="TKO-Fw-ExX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cFa-16-4kq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dream_forest_1024x1024" translatesAutoresizingMaskIntoConstraints="NO" id="neV-5X-YdH">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emd-sy-d7R">
+                                <rect key="frame" x="0.0" y="734" width="393" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="閱讀"/>
+                                <connections>
+                                    <segue destination="1QR-hE-AnL" kind="show" id="dER-tT-iy8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3fM-De-Gdx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="夢境森林的冒險" id="wkg-5Q-vz2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4L-Mb-jPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2523" y="-1408"/>
+        </scene>
+        <!--星光島的寶藏-->
+        <scene sceneID="T49-Wx-peR">
+            <objects>
+                <viewController id="39L-gN-b1r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TVH-mA-gtM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="starlight_island_1024x1024" translatesAutoresizingMaskIntoConstraints="NO" id="FS4-2M-WTO">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lit-n7-h8C">
+                                <rect key="frame" x="0.0" y="734" width="393" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="閱讀"/>
+                                <connections>
+                                    <segue destination="U3v-CS-mIF" kind="show" id="LBC-bb-pVK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9hu-pX-tcr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星光島的寶藏" id="8XC-Fh-D8n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9tt-mN-ghx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2523" y="-2098"/>
+        </scene>
+        <!--收藏章節-->
+        <scene sceneID="BDF-jA-lCF">
+            <objects>
+                <tableViewController id="bts-Zo-3cO" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="qJz-5d-Fwy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="ZgC-xa-M1n">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="120" id="gXm-gt-0sg">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gXm-gt-0sg" id="X9b-fM-Tcx">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="開發中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79C-A1-lcy">
+                                                    <rect key="frame" x="175.17091778523218" y="50.67822106665426" width="52" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="bts-Zo-3cO" id="rC0-co-uss"/>
+                            <outlet property="delegate" destination="bts-Zo-3cO" id="iho-V9-je3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="收藏章節" id="kla-ct-Y3v"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="si7-pc-ZEn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634.3511450381679" y="-61.267605633802823"/>
+        </scene>
+        <!--收藏-->
+        <scene sceneID="3QJ-tJ-8Te">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Au-bE-FvK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="收藏" image="heart" catalog="system" id="Nld-V5-mtf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oXC-Cf-4HB">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bts-Zo-3cO" kind="relationship" relationship="rootViewController" id="6ee-45-Fua"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24N-Kq-pXz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707.63358778625957" y="-61.267605633802823"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LK5-dC-iWj">
+            <objects>
+                <viewController id="1QR-hE-AnL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HQL-Gw-gWz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jl-h8-ock">
+                                <rect key="frame" x="16" y="233" width="361" height="666"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">故事情節
+
+在一次偶然的機會中，艾米發現了一本古老的書，書中描述了一個神秘的地方——夢境森林。據說，這片森林能夠連接到人們夢境中最野性的幻想，而且只有在夢中才能找到進入的路徑。
+
+一天晚上，艾米躺在床上，想像著夢境森林的樣子，不知不覺間進入了夢中。當她醒來時，發現自己正站在一片充滿奇異花朵和會發光的樹木的森林中。她意識到自己已經來到了夢境森林。
+
+在探索的過程中，艾米遇到了一些森林裡的居民——一群可愛的小動物和一位名叫蘿拉的森林守護者。蘿拉告訴艾米，森林的和平受到了一個被稱為「陰影獸」的生物的威脅。為了保護夢境森林和她的新朋友，艾米決定幫助他們對抗陰影獸。
+
+艾米和她的朋友們經歷了一系列的冒險，學會了團隊合作的重要性。在對抗陰影獸的過程中，艾米發現，只有通過理解和面對自己內心的恐懼，才能找到戰勝陰影獸的力量。在艾米的幫助下，森林的居民們團結起來，共同驅散了陰影，恢復了森林的和平。
+
+夢醒時分，艾米回到了自己的房間，她意識到這場冒險讓她學到了勇敢面對困難和恐懼的重要性。她也明白了，每個人心中都有一片屬於自己的夢境森林，勇氣和友誼是探索這片森林、實現夢想的關鍵。</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2PU-V1-WtF">
+                                <rect key="frame" x="16" y="103" width="361" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="gma-6Z-M9c">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2-1" translatesAutoresizingMaskIntoConstraints="NO" id="lt3-sM-09u">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2-2" translatesAutoresizingMaskIntoConstraints="NO" id="skr-tf-tUz">
+                                                <rect key="frame" x="120" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2-3" translatesAutoresizingMaskIntoConstraints="NO" id="vTC-rY-LVT">
+                                                <rect key="frame" x="240" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2-4" translatesAutoresizingMaskIntoConstraints="NO" id="I5B-t8-2ts">
+                                                <rect key="frame" x="360" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2-5" translatesAutoresizingMaskIntoConstraints="NO" id="ijF-3I-MBt">
+                                                <rect key="frame" x="480" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="Tmj-N6-hAE"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="rFk-Lx-9fT"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="74p-H1-oQs"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="600" height="120"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wU9-GK-NwQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="qIs-S2-lrf">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="U5J-VU-vcx"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Lz-O1-nmO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3352" y="-1408"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="De6-6k-gg1">
+            <objects>
+                <viewController id="U3v-CS-mIF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m0h-A3-91J">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1x-wc-aba">
+                                <rect key="frame" x="16" y="233" width="361" height="666"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">故事情節
+
+故事開始於艾米在她的祖父那裡聽到了一個關於星光島的傳說。島上藏有一個古老的寶藏，由一位勇敢的海盜王留下。但這個寶藏被一個謎樣的謎題所保護，只有最勇敢和智慧的探險者才能解開謎題，找到寶藏。
+
+受到傳說的啟發，艾米決定組織一支探險隊，包括她最好的朋友和一位老船長，一起出海尋寶。他們經歷風浪，航向遙遠的星光島。到達島上後，他們發現這裡充滿了閃亮的星光，不論白天黑夜都如同置身於星空之下。
+
+艾米和她的朋友們在島上遇到了各種挑戰，包括解開古老謎題和尋找隱藏的線索。在經歷一系列智慧和勇氣的考驗後，他們終於發現了寶藏的位置。但是，當他們打開寶藏箱時，發現裡面不是黃金或珠寶，而是一個古老的地圖和一本記載著保護海洋和自然的知識的書。
+
+艾米意識到，真正的寶藏不是物質財富，而是知識和保護我們生活環境的智慧。她和她的朋友們決定將這份知識分享給世界，提醒人們珍惜和保護自然的重要性。</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YOp-SM-vHR">
+                                <rect key="frame" x="16" y="103" width="361" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="Rgu-9k-3uV">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3-1" translatesAutoresizingMaskIntoConstraints="NO" id="gaK-0a-8bd">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3-2" translatesAutoresizingMaskIntoConstraints="NO" id="CuB-yM-h5G">
+                                                <rect key="frame" x="120" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3-3" translatesAutoresizingMaskIntoConstraints="NO" id="3J5-wV-7Ub">
+                                                <rect key="frame" x="240" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3-4" translatesAutoresizingMaskIntoConstraints="NO" id="ZAH-oJ-fO8">
+                                                <rect key="frame" x="360" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3-5" translatesAutoresizingMaskIntoConstraints="NO" id="FkG-LQ-Sjp">
+                                                <rect key="frame" x="480" y="0.0" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="9iv-zT-GZv"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="6Cv-0s-bgX"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="tFQ-E9-OBJ"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="600" height="120"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0cD-P2-uKf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="2fh-OA-qNm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6lP-2A-wzh"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jsb-mq-Vaw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3352" y="-2099"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1-1" width="1024" height="1024"/>
+        <image name="1-2" width="1024" height="1024"/>
+        <image name="1-3" width="1024" height="1024"/>
+        <image name="1-4" width="1024" height="1024"/>
+        <image name="1-5" width="1024" height="1024"/>
+        <image name="2-1" width="1024" height="1024"/>
+        <image name="2-2" width="1024" height="1024"/>
+        <image name="2-3" width="1024" height="1024"/>
+        <image name="2-4" width="1024" height="1024"/>
+        <image name="2-5" width="1024" height="1024"/>
+        <image name="3-1" width="1024" height="1024"/>
+        <image name="3-2" width="1024" height="1024"/>
+        <image name="3-3" width="1024" height="1024"/>
+        <image name="3-4" width="1024" height="1024"/>
+        <image name="3-5" width="1024" height="1024"/>
+        <image name="Amy" width="1024" height="1024"/>
+        <image name="Amy_s" width="120" height="120"/>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="dream_forest_1024x1024" width="1024" height="1024"/>
+        <image name="dream_forest_120x120" width="120" height="120"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="starlight_island_1024x1024" width="1024" height="1024"/>
+        <image name="starlight_island_120x120" width="120" height="120"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
